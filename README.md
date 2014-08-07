@@ -15,23 +15,27 @@ which shares some caching and thus works great together
 
 ## Installation
 
-	$ npm install http-get-pathname
+```shell
+npm install http-get-pathname
+```
 
 ## Usage
 
 The result is cached and subsequent calls are cheap
 
-	var httpGetPathname = require('http-get-pathname');
+```js
+var httpGetPathname = require('http-get-pathname');
 
-	// http://localhost/path/name?someQueryString
+// http://localhost/path/name?someQueryString
 
-	httpGetPathname(request); // path/name
+httpGetPathname(request); // path/name
 
-	// second call is cheap
-	httpGetPathname(request); // path/name
+// second call is cheap
+httpGetPathname(request); // path/name
 
-	// with leading slash
-	httpGetPathname(request, true); // /path/name
+// with leading slash
+httpGetPathname(request, true); // /path/name
+```
 
 ## License
 
