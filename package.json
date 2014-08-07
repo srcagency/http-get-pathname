@@ -1,0 +1,30 @@
+{
+	"name": "http-get-pathname",
+	"version": "1.0.0",
+	"description": "Extract and cache the pathname string of an http request",
+	"main": "index.js",
+	"keywords": [
+		"http",
+		"pathname"
+	],
+	"scripts": {
+		"test": "node test"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/srcagency/njs-http-get-pathname.git"
+	},
+	"author": {
+		"name": "Thomas Jensen",
+		"email": "thomas@src.agency",
+		"url": "http://src.agency"
+	},
+	"devDependencies": {
+		"tap": "^0.4.12"
+	},
+	"readmeFilename": "README.md",
+	"license": "MIT",
+	"dependencies": {
+		"debug": "^1.0.4"
+	}
+}
