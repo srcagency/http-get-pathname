@@ -12,19 +12,14 @@
 	},
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/srcagency/njs-http-get-pathname.git"
+		"url": "https://github.com/srcagency/http-get-pathname.git"
 	},
-	"author": {
-		"name": "Thomas Jensen",
-		"email": "thomas@src.agency",
-		"url": "http://src.agency"
-	},
-	"devDependencies": {
-		"tap": "^0.4.12"
-	},
-	"readmeFilename": "README.md",
+	"author": "Thomas Jensen <thomas@src.agency> (http://src.agency)",
 	"license": "MIT",
 	"dependencies": {
-		"debug": "^1.0.4"
+		"debug": "^2.1.0"
+	},
+	"devDependencies": {
+		"tap": "^0.4.13"
 	}
 }
