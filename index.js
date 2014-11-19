@@ -2,7 +2,7 @@
 
 var debug = require('debug')('http-get-pathname');
 
-module.exports = function( request, withLeadingSlash ){
+module.exports = function( request, stripLeadingSlash ){
 	var pathname;
 
 	if (request._pathname || request._pathname === '') {
@@ -13,10 +13,10 @@ module.exports = function( request, withLeadingSlash ){
 		var qsIdx = request.url.indexOf('?');
 
 		if (~qsIdx) {
-			request._pathname = request.url.slice(1, qsIdx);
+			request._pathname = request.url.slice(0, qsIdx);
 			request._query = request.url.slice(qsIdx+1);
 		} else {
-			request._pathname = request.url.substring(1);
+			request._pathname = request.url;
 			request._query = '';
 		}
 
@@ -25,5 +25,5 @@ module.exports = function( request, withLeadingSlash ){
 
 	debug('found pathname string to be "%s"', pathname);
 
-	return withLeadingSlash ? '/' + pathname : pathname;
+	return stripLeadingSlash ? pathname.substring(1) : pathname;
 };
