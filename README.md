@@ -8,9 +8,11 @@ parsing of the request/url
 
 The leading slash is stripped by default
 
-If you like the style, check out
-[http-body-parse](https://github.com/tjconcept/njs-http-body-parse)
-[http-query-parse](https://github.com/tjconcept/njs-http-query-parse)
+If you like the style, check out:
+
+- [http-body-parse](https://github.com/srcagency/http-body-parse)
+- [http-query-parse](https://github.com/srcagency/http-query-parse)
+
 which shares some caching and thus works great together
 
 ## Installation
